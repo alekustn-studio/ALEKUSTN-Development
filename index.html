@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Full-stack разработка: сайты, Telegram-боты, API и интеграции. Быстрые сроки, понятный процесс."
+    />
+    <meta name="theme-color" content="#fbf9f6" />
+    <meta name="color-scheme" content="light" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="index,follow" />
+    <meta name="author" content="ALEKUSTN" />
+    <title>ALEKUSTN Development — сайты, боты, full-stack</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">К содержанию</a>
+
+    <div class="flow-lines" aria-hidden="true">
+      <svg
+        class="flow-lines__svg"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1920 1200"
+        preserveAspectRatio="xMidYMid slice"
+        focusable="false"
+      >
+        <defs>
+          <linearGradient
+            id="flow-grad-a"
+            x1="0"
+            y1="0"
+            x2="960"
+            y2="0"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0%" stop-color="#023ea3" />
+            <stop offset="26%" stop-color="#e3000d" />
+            <stop offset="50%" stop-color="#007630" />
+            <stop offset="74%" stop-color="#f5a502" />
+            <stop offset="100%" stop-color="#023ea3" />
+            <animateTransform
+              attributeName="gradientTransform"
+              type="translate"
+              additive="sum"
+              values="-420 0; 420 0; -420 0"
+              keyTimes="0;0.5;1"
+              dur="10s"
+              repeatCount="indefinite"
+            />
+          </linearGradient>
+          <linearGradient
+            id="flow-grad-b"
+            x1="0"
+            y1="0"
+            x2="880"
+            y2="60"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0%" stop-color="#f5a502" />
+            <stop offset="28%" stop-color="#023ea3" />
+            <stop offset="52%" stop-color="#e3000d" />
+            <stop offset="76%" stop-color="#007630" />
+            <stop offset="100%" stop-color="#f5a502" />
+            <animateTransform
+              attributeName="gradientTransform"
+              type="translate"
+              additive="sum"
+              values="360 0; -360 0; 360 0"
+              keyTimes="0;0.5;1"
+              dur="12s"
+              repeatCount="indefinite"
+            />
+          </linearGradient>
+          <linearGradient
+            id="flow-grad-c"
+            x1="0"
+            y1="0"
+            x2="720"
+            y2="-40"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0%" stop-color="#007630" />
+            <stop offset="30%" stop-color="#f5a502" />
+            <stop offset="55%" stop-color="#023ea3" />
+            <stop offset="78%" stop-color="#e3000d" />
+            <stop offset="100%" stop-color="#007630" />
+            <animateTransform
+              attributeName="gradientTransform"
+              type="translate"
+              additive="sum"
+              values="-300 0; 500 0; -300 0"
+              keyTimes="0;0.5;1"
+              dur="8s"
+              repeatCount="indefinite"
+            />
+          </linearGradient>
+          <linearGradient
+            id="flow-grad-d"
+            x1="0"
+            y1="0"
+            x2="1000"
+            y2="80"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0%" stop-color="#e3000d" />
+            <stop offset="25%" stop-color="#007630" />
+            <stop offset="50%" stop-color="#f5a502" />
+            <stop offset="75%" stop-color="#023ea3" />
+            <stop offset="100%" stop-color="#e3000d" />
+            <animateTransform
+              attributeName="gradientTransform"
+              type="translate"
+              additive="sum"
+              values="0 0; 480 0; 0 0"
+              keyTimes="0;0.5;1"
+              dur="11s"
+              repeatCount="indefinite"
+            />
+          </linearGradient>
+        </defs>
+        <path
+          class="flow-lines__path"
+          fill="none"
+          stroke="url(#flow-grad-a)"
+          stroke-width="10.1"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M0 0"
+        />
+        <path
+          class="flow-lines__path flow-lines__path--b"
+          fill="none"
+          stroke="url(#flow-grad-b)"
+          stroke-width="10.9"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M0 0"
+        />
+        <path
+          class="flow-lines__path flow-lines__path--c"
+          fill="none"
+          stroke="url(#flow-grad-c)"
+          stroke-width="10.85"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M0 0"
+        />
+        <path
+          class="flow-lines__path flow-lines__path--d"
+          fill="none"
+          stroke="url(#flow-grad-d)"
+          stroke-width="10.75"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M0 0"
+        />
+        <path
+          class="flow-lines__path flow-lines__path--e"
+          fill="none"
+          stroke="url(#flow-grad-b)"
+          stroke-width="10.55"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M0 0"
+        />
+        <path
+          class="flow-lines__path flow-lines__path--f"
+          fill="none"
+          stroke="url(#flow-grad-d)"
+          stroke-width="10.45"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M0 0"
+        />
+        <path
+          class="flow-lines__path flow-lines__path--g"
+          fill="none"
+          stroke="url(#flow-grad-a)"
+          stroke-width="10.35"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M0 0"
+        />
+      </svg>
+    </div>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="logo" href="#" aria-label="ALEKUSTN — на главную">ALEKUSTN</a>
+        <button
+          type="button"
+          class="lang-toggle"
+          data-lang-toggle
+          aria-label="Switch language"
+        >
+          EN
+        </button>
+        <div class="nav-slot">
+          <button
+            type="button"
+            class="nav-toggle"
+            aria-expanded="false"
+            aria-controls="site-nav"
+            data-nav-toggle
+          >
+            <span class="sr-only">Открыть меню</span>
+            <span class="nav-toggle-bar"></span>
+          </button>
+          <button
+            type="button"
+            class="nav-close"
+            data-nav-close
+            aria-label="Закрыть меню"
+          >
+            <span class="nav-close-x" aria-hidden="true"></span>
+          </button>
+        </div>
+        <nav class="site-nav" id="site-nav" data-nav>
+          <a href="#services">Услуги</a>
+          <a href="#work">Кейсы</a>
+          <a href="#testimonials">Отзывы</a>
+          <a href="#process">Процесс</a>
+          <a href="#stack">Стек</a>
+          <a href="#about">Обо мне</a>
+          <a href="#contact" class="nav-cta">Связаться</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="hero-mesh" aria-hidden="true">
+          <span class="hero-blob hero-blob--a"></span>
+          <span class="hero-blob hero-blob--b"></span>
+          <span class="hero-blob hero-blob--c"></span>
+        </div>
+        <div class="wrap hero-inner">
+          <p class="eyebrow reveal" data-reveal>Full-stack · сайты · боты · интеграции</p>
+          <h1 class="reveal" data-reveal>
+            Full-stack разработка: сайты, Telegram-боты и всё, что их связывает
+          </h1>
+          <p class="lead reveal" data-reveal>
+            Фронт на Next.js / React, боты на Python или Node, базы и очереди,
+            API и внешние сервисы. От лендинга до нетривиального бэкенда —
+            фиксируем объём и сроки, сдаём поэтапно, поддержка по договорённости.
+          </p>
+          <div class="hero-actions reveal" data-reveal>
+            <a class="btn btn-primary" href="#contact">Обсудить проект</a>
+            <a class="hero-text-link" href="#services">Услуги и форматы</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section">
+        <div class="wrap">
+          <h2 class="section-title reveal" data-reveal>Услуги</h2>
+          <p class="section-intro reveal" data-reveal>
+            Ниже — типичные форматы. Точная смета после короткого созвона или
+            сообщения с ТЗ.
+          </p>
+          <ul class="cards">
+            <li class="card reveal" data-reveal>
+              <h3>Сайты</h3>
+              <p>
+                Лендинг, сайт-визитка компании, многостраничник услуг. Вёрстка
+                под мобильные, быстрая загрузка, формы заявок, подключение
+                аналитики.
+              </p>
+            </li>
+            <li class="card reveal" data-reveal>
+              <h3>Telegram-боты</h3>
+              <p>
+                Приём заявок, меню и сценарии, рассылка материалов, уведомления
+                вам или менеджерам, сохранение лидов в базу.
+              </p>
+            </li>
+            <li class="card reveal" data-reveal>
+              <h3>Чуть сложнее</h3>
+              <p>
+                Мини-кабинет, админка, интеграции с API, фоновые задачи,
+                Telegram Mini App — обсуждаем объём отдельно, режем на этапы.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="work" class="section section-alt">
+        <div class="wrap">
+          <h2 class="section-title reveal" data-reveal>Кейсы</h2>
+          <p class="section-intro reveal" data-reveal>
+            Реальные проекты из моей практики: от визиток и ботов до сложных
+            веб-приложений. Ссылки на прод — по запросу, если договор это
+            позволяет.
+          </p>
+          <ul class="trust-strip reveal" data-reveal aria-label="Цифры по кейсу Telegram-бота">
+            <li>
+              <span class="trust-num">2</span>
+              <span class="trust-label">дня до запуска бота</span>
+            </li>
+            <li>
+              <span class="trust-num">138</span>
+              <span class="trust-label">заявок в базе</span>
+            </li>
+            <li>
+              <span class="trust-num">122</span>
+              <span class="trust-label">уникальных пользователей с заявкой</span>
+            </li>
+            <li>
+              <span class="trust-num">113</span>
+              <span class="trust-label">успешных уведомлений в чат команды</span>
+            </li>
+          </ul>
+          <div class="case-grid">
+            <article class="case-card reveal" data-reveal>
+              <p class="case-kind">Сайт</p>
+              <h3 class="case-title">Сайт для турагентства Balance Tours</h3>
+              <p class="case-desc">
+                Многостраничный сайт для Balance Tours на Next.js: туры и гайды,
+                фильтры и поиск, заявки из модального окна, плавные анимации и
+                аккуратная мобильная вёрстка.
+              </p>
+              <ul class="case-tags" aria-label="Стек">
+                <li>Next.js 14</li>
+                <li>TypeScript</li>
+                <li>Tailwind</li>
+                <li>Framer Motion</li>
+              </ul>
+              <a class="case-link" href="#contact">Ссылка / демо — по запросу</a>
+            </article>
+            <article
+              id="case-balance-bot"
+              class="case-card reveal"
+              data-reveal
+            >
+              <p class="case-kind">Telegram</p>
+              <h3 class="case-title">Бот для турагентства Balance Tours</h3>
+              <p class="case-desc">
+                Telegram-бот под Balance Tours: меню и сценарии, выдача
+                PDF-гайда, сбор контактов с проверкой, SQLite и мгновенные
+                уведомления в рабочий чат команды.
+              </p>
+              <div class="case-metrics" aria-label="Метрики и статистика">
+                <p class="case-metrics-lead">
+                  Собрано и запущено за <strong>2 дня</strong>. Ниже — ключевые
+                  показатели по базе.
+                </p>
+                <dl class="case-metrics-grid">
+                  <div class="case-metrics-row">
+                    <dt>Заявок в базе (contacts)</dt>
+                    <dd><span class="case-stat-num">138</span></dd>
+                  </div>
+                  <div class="case-metrics-row">
+                    <dt>Уникальных пользователей с заявкой</dt>
+                    <dd><span class="case-stat-num">122</span></dd>
+                  </div>
+                  <div class="case-metrics-row">
+                    <dt>Тип контакта</dt>
+                    <dd>телефон — 137, username — 1</dd>
+                  </div>
+                </dl>
+              </div>
+              <ul class="case-tags" aria-label="Стек">
+                <li>Python</li>
+                <li>SQLite</li>
+                <li>Telegram Bot API</li>
+              </ul>
+              <a class="case-link" href="#contact">Ссылка / демо — по запросу</a>
+            </article>
+            <article class="case-card reveal" data-reveal>
+              <p class="case-kind">Сайт</p>
+              <h3 class="case-title">Арт-витрина: галерея, каталог и магазин</h3>
+              <p class="case-desc">
+                Сайт для художника: витрина работ, внимание к типографике и
+                ритму сетки, загрузка и раздача медиа через объектное хранилище
+                (S3) — быстро открывается и хорошо смотрится с телефона.
+              </p>
+              <p class="case-metrics-placeholder">
+                Аналитика подключена — ключевые метрики (просмотры, корзина,
+                заказы) добавлю сюда, когда накопится достаточно данных.
+              </p>
+              <ul class="case-tags" aria-label="Стек">
+                <li>Next.js</li>
+                <li>React</li>
+                <li>AWS S3</li>
+              </ul>
+              <a class="case-link" href="#contact">Ссылка / демо — по запросу</a>
+            </article>
+            <article class="case-card case-card--wip reveal" data-reveal>
+              <p class="case-kind">Продукт</p>
+              <h3 class="case-title">
+                Предсказательные рынки и мини-приложение в Telegram
+              </h3>
+              <p class="case-status">В процессе разработки</p>
+              <p class="case-desc">
+                Веб-платформа prediction markets плюс удобный слой в Telegram
+                Mini App: торги, позиции и выплаты на связке Next.js, Node.js и
+                смарт-контрактов в сети Polygon.
+              </p>
+              <ul class="case-tags" aria-label="Стек">
+                <li>Next.js</li>
+                <li>Node.js</li>
+                <li>Hardhat</li>
+                <li>Polygon</li>
+                <li>Telegram Mini App</li>
+              </ul>
+              <a class="case-link" href="#contact">Ссылка / демо — по запросу</a>
+            </article>
+            <article class="case-card case-card--wip reveal" data-reveal>
+              <p class="case-kind">Платформа</p>
+              <h3 class="case-title">
+                Планировщик отложенного постинга в соцсети
+              </h3>
+              <p class="case-status">В процессе разработки</p>
+              <p class="case-desc">
+                Веб-приложение для подготовки и отложенной публикации контента
+                в несколько соцсетей: очереди задач, обработка медиа, хранение и
+                статусы отправки — без ручного копирования в каждый канал.
+              </p>
+              <ul class="case-tags" aria-label="Стек">
+                <li>Next.js 15</li>
+                <li>PostgreSQL</li>
+                <li>Redis / BullMQ</li>
+                <li>Supabase</li>
+              </ul>
+              <a class="case-link" href="#contact">Ссылка / демо — по запросу</a>
+            </article>
+          </div>
+          <div class="cta-mid reveal" data-reveal>
+            <p class="cta-mid__text">
+              Нужен сайт, бот или интеграция в том же духе — обсудим объём и
+              сроки.
+            </p>
+            <a class="btn btn-primary" href="#contact">Обсудить проект</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section">
+        <div class="wrap">
+          <h2 class="section-title reveal" data-reveal>Отзывы</h2>
+          <p class="section-intro reveal" data-reveal>
+            Ниже — формат блока: подставьте реальные цитаты и имена с
+            согласия клиентов. Тексты сейчас отражают тип задач из кейсов выше.
+          </p>
+          <div class="testimonial-grid">
+            <figure class="testimonial reveal" data-reveal>
+              <blockquote class="testimonial-quote">
+                Сайт под туры сделали быстро: структура понятная, на телефоне
+                всё читается, заявки приходят без лишних полей.
+              </blockquote>
+              <figcaption class="testimonial-meta">
+                <span class="testimonial-name">Заказчик</span>
+                <span class="testimonial-role">турфирма · замените на имя</span>
+              </figcaption>
+            </figure>
+            <figure class="testimonial reveal" data-reveal>
+              <blockquote class="testimonial-quote">
+                Бот для лидов настроили чётко: PDF уходит сам, контакты
+                падают в чат, база не теряется.
+              </blockquote>
+              <figcaption class="testimonial-meta">
+                <span class="testimonial-name">Заказчик</span>
+                <span class="testimonial-role">малый бизнес · замените на имя</span>
+              </figcaption>
+            </figure>
+            <figure class="testimonial reveal" data-reveal>
+              <blockquote class="testimonial-quote">
+                Сложный фронт и интеграции — без «сделаем потом»: этапами,
+                с понятным статусом, без растягивания сроков.
+              </blockquote>
+              <figcaption class="testimonial-meta">
+                <span class="testimonial-name">Заказчик</span>
+                <span class="testimonial-role">продукт / стартап · замените на имя</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="section section-alt">
+        <div class="wrap">
+          <h2 class="section-title reveal" data-reveal>Как работаю</h2>
+          <p class="section-intro process-intro reveal" data-reveal>
+            Первый ответ — как правило в течение <strong>4 часов</strong> в
+            рабочее время. В первом сообщении достаточно пары фраз: что нужно
+            сделать, к какому сроку ориентируетесь, есть ли пример или ссылка.
+          </p>
+          <ol class="steps">
+            <li class="reveal" data-reveal>
+              <span class="step-num">1</span>
+              <div>
+                <h3>Короткое ТЗ</h3>
+                <p>
+                  Цель сайта или бота, референсы, сроки, что должно получиться
+                  на выходе — можно очень кратко, главное, чтобы было понятно
+                  направление.
+                </p>
+              </div>
+            </li>
+            <li class="reveal" data-reveal>
+              <span class="step-num">2</span>
+              <div>
+                <h3>Смета и договорённость</h3>
+                <p>
+                  Фиксируем объём, срок, стоимость и количество правок — без
+                  «раздувания» задачи по ходу.
+                </p>
+              </div>
+            </li>
+            <li class="reveal" data-reveal>
+              <span class="step-num">3</span>
+              <div>
+                <h3>Разработка и сдача</h3>
+                <p>
+                  Показываю результат на тестовой среде, вношу согласованные
+                  правки, помогаю с запуском на вашем домене или сервере.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="stack" class="section">
+        <div class="wrap">
+          <h2 class="section-title reveal" data-reveal>Технологии</h2>
+          <p class="section-intro reveal" data-reveal>
+            Подбираю стек под задачу; чаще всего это современный фронт и
+            бэкенд для ботов.
+          </p>
+          <ul class="tags reveal" data-reveal aria-label="Основной стек">
+            <li>Next.js / React</li>
+            <li>TypeScript</li>
+            <li>Python (боты)</li>
+            <li>Node.js</li>
+            <li>PostgreSQL / SQLite</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="about" class="section section-alt">
+        <div class="wrap about-wrap">
+          <h2 class="section-title reveal" data-reveal>Обо мне</h2>
+          <div class="about-body reveal" data-reveal>
+            <figure class="about-photo">
+              <img
+                src="IMG_0199.PNG"
+                alt="Алексей Устинов"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <p>Здравствуйте, меня зовут Алексей Устинов.</p>
+            <p>
+              Работаю под ником <strong>ALEKUSTN</strong>. По сути кручу веб
+              (чаще всего Next / React), плюс боты на Python или Node, и всякие
+              базы, очереди и API — когда без этого проект не взлетит.
+            </p>
+            <p>
+              В коде давно: были и маленькие лендинги с ботами, и штуки потяжелее
+              — смарт-контракты, фоновые воркеры, нормальный бэкенд. Сейчас
+              параллельно допиливаю свои проекты и беру заказы, где заранее
+              можно нормально описать задачу и срок, без «сделаем как-нибудь».
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-cta">
+        <div class="wrap contact-inner">
+          <h2 class="section-title reveal" data-reveal>Связаться</h2>
+          <p class="section-intro contact-lead reveal" data-reveal>
+            Напишите, что нужно сделать — отвечу в Telegram или на почте с
+            <strong>2–3 вариантами</strong> по цене и срокам, чтобы можно было
+            выбрать без догадок.
+          </p>
+          <div class="contact-block reveal" data-reveal data-contact-panel>
+            <div
+              class="contact-switch"
+              role="tablist"
+              aria-label="Как с вами связаться"
+            >
+              <button
+                type="button"
+                class="contact-switch-btn is-active"
+                role="tab"
+                id="contact-tab-direct"
+                aria-selected="true"
+                aria-controls="contact-panel-direct"
+                data-contact-tab="direct"
+              >
+                Напрямую
+              </button>
+              <button
+                type="button"
+                class="contact-switch-btn"
+                role="tab"
+                id="contact-tab-form"
+                aria-selected="false"
+                aria-controls="contact-panel-form"
+                data-contact-tab="form"
+              >
+                Форма
+              </button>
+            </div>
+            <div
+              id="contact-panel-direct"
+              class="contact-tabpanel"
+              role="tabpanel"
+              aria-labelledby="contact-tab-direct"
+            >
+              <ul class="contact-list">
+                <li>
+                  <span class="contact-label">Telegram</span>
+                  <a
+                    class="contact-value"
+                    href="https://t.me/aleks_ustya"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >@aleks_ustya</a>
+                </li>
+                <li>
+                  <span class="contact-label">Почта</span>
+                  <a class="contact-value" href="mailto:alekustn@gmail.com"
+                    >alekustn@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+            <div
+              id="contact-panel-form"
+              class="contact-tabpanel"
+              role="tabpanel"
+              aria-labelledby="contact-tab-form"
+              hidden
+            >
+              <form
+                class="contact-form"
+                data-contact-form
+                data-contact-api="https://alekustn.store/api/send-contact-form"
+              >
+                <div class="contact-field">
+                  <label for="contact-name">Имя</label>
+                  <input
+                    id="contact-name"
+                    name="contact_name"
+                    type="text"
+                    autocomplete="name"
+                    required
+                    placeholder="Как к вам обращаться"
+                  />
+                </div>
+                <div class="contact-field">
+                  <label for="contact-reach">Почта или Telegram</label>
+                  <input
+                    id="contact-reach"
+                    name="contact_reach"
+                    type="text"
+                    autocomplete="email"
+                    required
+                    placeholder="email@… или @username"
+                  />
+                </div>
+                <div class="contact-intake">
+                  <p class="contact-intake-presets-label" data-i18n-presets-label>
+                    Шаблон в сообщение — кнопка подставляет текст, другая заменит его
+                    целиком. Всё можно править.
+                  </p>
+                  <div class="contact-msg-presets" data-msg-presets>
+                    <button type="button" class="msg-preset" data-msg-preset="site_landing">
+                      Лендинг
+                    </button>
+                    <button type="button" class="msg-preset" data-msg-preset="site_multipage">
+                      Многостраничник
+                    </button>
+                    <button type="button" class="msg-preset" data-msg-preset="bot_leads">
+                      Бот для заявок
+                    </button>
+                    <button type="button" class="msg-preset" data-msg-preset="bot_notify">
+                      Бот + уведомления
+                    </button>
+                    <button type="button" class="msg-preset" data-msg-preset="miniapp">
+                      Mini App
+                    </button>
+                    <button type="button" class="msg-preset" data-msg-preset="api_integration">
+                      Интеграция / API
+                    </button>
+                    <button type="button" class="msg-preset" data-msg-preset="unsure">
+                      Нужна помощь с формулировкой
+                    </button>
+                  </div>
+                </div>
+                <div class="contact-field">
+                  <label for="contact-msg">Вопрос</label>
+                  <textarea
+                    id="contact-msg"
+                    name="contact_msg"
+                    rows="4"
+                    required
+                    placeholder="Кратко: что нужно сделать, сроки, если есть — ссылка на ТЗ или пример"
+                  ></textarea>
+                </div>
+                <p class="contact-form-promise">
+                  После отправки отвечу тем же каналом (Telegram или почта) и
+                  предложу несколько сметных вариантов с ценой и сроком — от
+                  минимального объёма до расширенного.
+                </p>
+                <button type="submit" class="btn btn-primary contact-submit">
+                  Отправить
+                </button>
+              </form>
+              <p
+                class="contact-form-success"
+                id="contact-form-success"
+                hidden
+                role="status"
+              >
+                Сообщение отправлено. Отвечу в Telegram или на почту.
+              </p>
+              <p class="contact-form-error" id="contact-form-error" hidden role="alert"></p>
+              <p class="contact-form-note">
+                Отправка идёт через тот же API, что и форма на
+                <a
+                  href="https://alekustn.store/contacts"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >alekustn.store</a>
+                (уведомление в Telegram и подписка в MailerLite). Если API
+                недоступен, можно поменять URL в атрибуте
+                <code>data-contact-api</code> или написать через вкладку
+                «Напрямую».
+              </p>
+            </div>
+          </div>
+          <div
+            class="mini-faq reveal"
+            data-reveal
+            role="region"
+            aria-labelledby="mini-faq-heading"
+          >
+            <h3 class="mini-faq__title" id="mini-faq-heading">
+              Коротко о формате работы
+            </h3>
+            <div class="mini-faq__list">
+              <details class="mini-faq__item">
+                <summary>Как считается стоимость и сроки</summary>
+                <p>
+                  Смотрю на объём экранов/сценариев, интеграции и срочность.
+                  В ответе на заявку даю 2–3 варианта пакета с разной глубиной —
+                  можно выбрать или скорректировать.
+                </p>
+              </details>
+              <details class="mini-faq__item">
+                <summary>Предоплата и этапы оплаты</summary>
+                <p>
+                  Обычно старт после согласования сметы: часть авансом, остаток
+                  по этапам или при сдаче — зависит от объёма, фиксируем в
+                  переписке до начала работ.
+                </p>
+              </details>
+              <details class="mini-faq__item">
+                <summary>NDA и конфиденциальность</summary>
+                <p>
+                  По запросу подписываю NDA или работаю по вашему шаблону. Код и
+                  доступы не передаю третьим лицам.
+                </p>
+              </details>
+              <details class="mini-faq__item">
+                <summary>Часовой пояс и созвоны</summary>
+                <p>
+                  Живу в привычном для РФ/Европы часовом поясе; созвоны —
+                  договоримся заранее. Многое можно закрыть текстом в Telegram
+                  без звонка.
+                </p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <div class="footer-col">
+          <p class="footer-tagline">
+            ALEKUSTN Development
+          </p>
+          <ul
+            class="social-links social-links--footer"
+            aria-label="Профили в соцсетях"
+          >
+            <li>
+              <a
+                href="https://t.me/aleks_ustya"
+                class="social-link"
+                aria-label="Telegram"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg
+                  class="social-icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.47-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/alekustn"
+                class="social-link"
+                aria-label="Instagram"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg
+                  class="social-icon social-icon--stroke"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle class="social-ig-dot" cx="17.5" cy="6.5" r="1" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.threads.com/@alekustn"
+                class="social-link"
+                aria-label="Threads"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg
+                  class="social-icon social-icon--stroke"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer-year"></p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
